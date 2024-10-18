@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Privacus_backend": {
+      "main": "src/Privacus_backend/main.mo",
+      "type": "motoko"
+    },
+    "Privacus_frontend": {
+      "dependencies": [
+        "Privacus_backend"
+      ],
+      "source": [
+        "src/Privacus_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Privacus_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
